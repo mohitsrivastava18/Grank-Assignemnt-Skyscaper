@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment | Candeur Crescent</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body class="appointment-body">
+
+    <!--==================== FLOATING CONTACTS ====================-->
+    <div class="floating-contact">
+        <a href="tel:+919876543210" class="float-btn phone-btn" title="Call Us">
+            <svg viewBox="0 0 24 24" width="24" height="24">
+                <path
+                    d="M6.62 10.79a15.15 15.15 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.11-.27 11.36 11.36 0 0 0 3.58 1.1 1 1 0 0 1 .88 1v3.21a1 1 0 0 1-1 1A16 16 0 0 1 3 4a1 1 0 0 1 1-1h3.21a1 1 0 0 1 1 .88 11.36 11.36 0 0 0 1.1 3.58 1 1 0 0 1-.27 1.11z"
+                    fill="currentColor" />
+            </svg>
+        </a>
+        <a href="https://wa.me/919876543210" class="float-btn whatsapp-btn" target="_blank" title="WhatsApp Us">
+            <svg viewBox="0 0 24 24" width="24" height="24">
+                <path
+                    d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.458L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.59 1.977 14.113.953 11.493.953 6.06.953 1.633 5.325 1.63 10.755c-.001 1.705.452 3.371 1.31 4.878l-.993 3.624 3.71-.973zm13.067-7.79c-.301-.15-1.78-.879-2.056-.979-.275-.1-.475-.15-.675.15-.2.3-.775.979-.95 1.179-.175.2-.35.225-.65.075-.3-.15-1.265-.467-2.41-1.485-.89-.795-1.49-1.77-1.665-2.07-.175-.3-.019-.463.13-.612.135-.133.301-.35.45-.525.15-.175.2-.3.3-.5.1-.2.05-.375-.025-.525-.075-.15-.675-1.625-.925-2.225-.244-.589-.493-.51-.675-.519-.175-.009-.375-.01-.575-.01-.2 0-.525.075-.8 3.75-.275.3-1.05 1.625-2.55 2.925-1.228 1.066-2.27 1.258-2.57 1.308-.3.05-.575.025-.75-.025-.2-.05-.575-.225-.75-.375z"
+                    fill="currentColor" />
+            </svg>
+        </a>
+    </div>
+
+    <!--==================== HEADER / NAVIGATION ====================-->
+    <header class="header sticky" id="header">
+        <div class="container nav-container">
+            <!-- Logo Left -->
+            <a href="index.html" class="logo">
+                <img src="assets/logo/logo.png" alt="Candeur Crescent">
+            </a>
+
+            <!-- Return CTA -->
+            <a href="index.html" class="btn enquire-outline-btn">
+                <span>← Back to Home</span>
+            </a>
+
+            <!-- Logo Right -->
+            <div class="logo-right">
+                <img src="assets/logo/logo2.png" alt="Candeur Developers">
+            </div>
+        </div>
+    </header>
+
+    <!--==================== BOOKING FORM SECTION ====================-->
+    <section class="booking-section">
+        <div class="booking-bg-overlay" style="background-image: url('assets/bgg.jpg');"></div>
+        <div class="overlay"></div>
+
+        <div class="container booking-container">
+            <div class="booking-card">
+                <div class="booking-header">
+                    <span class="sub-title text-gold">EXCLUSIVE SITE VISIT</span>
+                    <h1 class="booking-title">Book An Appointment</h1>
+                    <p class="booking-subtitle">Schedule your personalized VIP tour of Candeur Crescent skyscrapers and
+                        experience luxury first-hand.</p>
+                </div>
+
+                <form id="appointment-form" novalidate>
+                    <div class="form-grid">
+                        <!-- Full Name -->
+                        <div class="form-group">
+                            <label for="fullName">Full Name <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name"
+                                    required>
+                                <span class="validation-icon"></span>
+                            </div>
+                            <span class="error-msg" id="name-error">Please enter at least 3 letters.</span>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                                <span class="validation-icon"></span>
+                            </div>
+                            <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div class="form-group">
+                            <label for="phone">Phone Number <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <input type="tel" id="phone" name="phone" placeholder="Enter 10-digit mobile number"
+                                    required>
+                                <span class="validation-icon"></span>
+                            </div>
+                            <span class="error-msg" id="phone-error">Please enter a valid 10-digit mobile number.</span>
+                        </div>
+
+                        <!-- Date of Visit -->
+                        <div class="form-group">
+                            <label for="visitDate">Preferred Date of Visit <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <input type="date" id="visitDate" name="visitDate" required>
+                                <span class="validation-icon"></span>
+                            </div>
+                            <span class="error-msg" id="date-error">Please select a valid future date.</span>
+                        </div>
+
+                        <!-- Visitor Count -->
+                        <div class="form-group">
+                            <label for="visitors">Number of Visitors <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <select id="visitors" name="visitors" required>
+                                    <option value="" disabled selected>Select visitor count</option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 Persons</option>
+                                    <option value="3">3 Persons</option>
+                                    <option value="4">4 Persons</option>
+                                    <option value="5">5+ Persons</option>
+                                </select>
+                            </div>
+                            <span class="error-msg" id="visitors-error">Please select visitor count.</span>
+                        </div>
+
+                        <!-- Tower of Interest -->
+                        <div class="form-group">
+                            <label for="tower">Tower of Interest <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <select id="tower" name="tower" required>
+                                    <option value="" disabled selected>Select tower</option>
+                                    <option value="Tower A">Tower A</option>
+                                    <option value="Tower B">Tower B</option>
+                                    <option value="Tower C">Tower C</option>
+                                    <option value="Tower D">Tower D</option>
+                                    <option value="Tower E">Tower E</option>
+                                </select>
+                            </div>
+                            <span class="error-msg" id="tower-error">Please select a tower.</span>
+                        </div>
+                    </div>
+
+                    <!-- Preferred Time Slot (Radio Cards) -->
+                    <div class="form-group full-width">
+                        <label>Preferred Time Slot <span class="required">*</span></label>
+                        <div class="time-slots-grid">
+                            <label class="slot-card">
+                                <input type="radio" name="timeSlot" value="Morning (10:00 AM - 1:00 PM)" required>
+                                <div class="slot-card-inner">
+                                    <span class="slot-icon">🌅</span>
+                                    <span class="slot-title">Morning</span>
+                                    <span class="slot-time">10:00 AM - 1:00 PM</span>
+                                </div>
+                            </label>
+                            <label class="slot-card">
+                                <input type="radio" name="timeSlot" value="Afternoon (1:00 PM - 4:00 PM)">
+                                <div class="slot-card-inner">
+                                    <span class="slot-icon">☀️</span>
+                                    <span class="slot-title">Afternoon</span>
+                                    <span class="slot-time">1:00 PM - 4:00 PM</span>
+                                </div>
+                            </label>
+                            <label class="slot-card">
+                                <input type="radio" name="timeSlot" value="Evening (4:00 PM - 7:00 PM)">
+                                <div class="slot-card-inner">
+                                    <span class="slot-icon">🌇</span>
+                                    <span class="slot-title">Evening</span>
+                                    <span class="slot-time">4:00 PM - 7:00 PM</span>
+                                </div>
+                            </label>
+                        </div>
+                        <span class="error-msg text-center" id="slot-error">Please select a time slot.</span>
+                    </div>
+
+                    <!-- Additional Message -->
+                    <div class="form-group full-width">
+                        <label for="message">Special Requirements / Notes (Optional)</label>
+                        <textarea id="message" name="message" rows="4"
+                            placeholder="Any special needs, requirements, or information you'd like to share..."></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-submit-wrap">
+                        <button type="submit" class="btn submit-booking-btn">
+                            <span class="btn-text">Confirm Booking</span>
+                            <div class="btn-loader"></div>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== SUCCESS CONFIRMATION MODAL ====================-->
+    <div class="lightbox success-modal" id="success-modal">
+        <div class="success-card">
+            <div class="success-icon-wrap">
+                <div class="success-checkmark"></div>
+            </div>
+
+            <h2 class="success-title">Appointment Confirmed!</h2>
+            <p class="success-message">Your VIP site visit has been scheduled. A confirmation email and SMS with visit
+                details have been sent to you.</p>
+
+            <div class="booking-details-summary">
+                <div class="summary-row">
+                    <span class="summary-label">Booking ID:</span>
+                    <span class="summary-val text-gold" id="summary-booking-id">-</span>
+                </div>
+                <div class="summary-row">
+                    <span class="summary-label">Visitor:</span>
+                    <span class="summary-val" id="summary-name">-</span>
+                </div>
+                <div class="summary-row">
+                    <span class="summary-label">Date of Visit:</span>
+                    <span class="summary-val" id="summary-date">-</span>
+                </div>
+                <div class="summary-row">
+                    <span class="summary-label">Time Slot:</span>
+                    <span class="summary-val" id="summary-time">-</span>
+                </div>
+                <div class="summary-row">
+                    <span class="summary-label">Tower:</span>
+                    <span class="summary-val" id="summary-tower">-</span>
+                </div>
+            </div>
+
+            <a href="index.html" class="btn return-home-btn">Return to Home</a>
+        </div>
+    </div>
+
+     
+
+    <!-- Script Links -->
+    <script src="js/script.js"></script>
+    <script src="js/appointment.js"></script>
+</body>
+
+</html>

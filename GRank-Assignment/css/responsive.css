@@ -1,0 +1,313 @@
+/*=========================================
+  RESPONSIVE MEDIA QUERIES
+=========================================*/
+
+/* Large Screens / Notebooks (max-width: 1200px) */
+@media (max-width: 1200px) {
+    .hero-title {
+        font-size: 80px;
+    }
+    
+    .stats-banner {
+        padding: 25px 35px;
+        width: calc(100% - 60px);
+    }
+    
+    .stats-grid {
+        gap: 25px;
+    }
+    
+    .stat-circle-wrap {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .stat-circle span {
+        font-size: 18px;
+    }
+    
+    .plans-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+    
+    .amenities-slide {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 135px);
+    }
+}
+
+/* Tablets (max-width: 992px) */
+@media (max-width: 992px) {
+    .section {
+        padding: 70px 0;
+    }
+
+    /* Mobile Hamburger Nav */
+    .menu-toggle {
+        display: flex;
+        z-index: 1001;
+    }
+    
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 300px;
+        height: 100vh;
+        background: var(--bg-white);
+        box-shadow: -10px 0 40px rgba(0,0,0,0.1);
+        border-radius: 0;
+        border: none;
+        padding: 100px 40px 40px;
+        transition: var(--transition);
+        z-index: 1000;
+        backdrop-filter: none;
+    }
+    
+    .navbar.active {
+        right: 0;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .nav-links a {
+        width: 100%;
+        display: block;
+        padding: 12px 25px;
+    }
+    
+    .logo-right {
+        display: none; /* Hide builder logo on mobile header to save space */
+    }
+
+    /* Hero adjustments */
+    .hero-title {
+        font-size: 64px;
+    }
+    
+    .stats-banner-wrapper {
+        position: relative;
+        margin-top: -60px;
+        z-index: 5;
+    }
+    
+    .stats-banner {
+        border-radius: 30px;
+        margin: 0 auto;
+        width: 100%;
+        flex-direction: column;
+        gap: 30px;
+        padding: 35px;
+    }
+    
+    .stats-grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+    
+    .stats-divider {
+        display: none;
+    }
+    
+    .stats-contact {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 25px;
+    }
+
+    /* Welcome / About */
+    .welcome-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    
+    .welcome-split {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .outlined-title {
+        font-size: 42px;
+    }
+    
+    .welcome-right {
+        order: -1; /* Place circular tower graphic on top on smaller screens */
+    }
+    
+    .circle-image-container {
+        width: 320px;
+        height: 320px;
+    }
+    
+    .circle-image-bg {
+        width: 346px;
+        height: 346px;
+    }
+
+    /* Plans */
+    .section-badge-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .badge-actions {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    /* Amenities */
+    .amenities-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .amenities-info-panel {
+        text-align: center;
+        align-items: center;
+    }
+
+    /* Gallery */
+    .video-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .video-thumbnail-wrap {
+        height: 250px;
+    }
+
+    /* Location */
+    .location-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .location-image-side {
+        order: -1;
+    }
+}
+
+/* Mobile Screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 48px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .plans-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .amenities-slide {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 15px 10px;
+    }
+    
+    .image-grid-masonry {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .location-details-grid {
+        gap: 20px;
+    }
+    
+    .location-col {
+        flex: 1 1 45%;
+    }
+    
+    .booking-callout-banner {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        border-radius: 25px;
+        padding: 25px;
+    }
+    
+    .footer-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .footer-logo {
+        margin: 0 auto 25px;
+    }
+    
+    .contact-col {
+        align-items: center;
+    }
+    
+    .floating-contact {
+        right: 15px;
+    }
+    
+    .float-btn {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+/* Small Mobile (max-width: 576px) */
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 40px;
+    }
+    
+    .hero-subtitle {
+        font-size: 13px;
+        letter-spacing: 3px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .plans-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .amenities-slide {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+    
+    .image-grid-masonry {
+        grid-template-columns: 1fr;
+    }
+    
+    .location-col {
+        flex: 1 1 100%;
+    }
+    
+    .circle-image-container {
+        width: 260px;
+        height: 260px;
+    }
+    
+    .circle-image-bg {
+        width: 284px;
+        height: 284px;
+    }
+    
+    .close-btn {
+        top: 15px;
+        right: 20px;
+        font-size: 40px;
+    }
+}

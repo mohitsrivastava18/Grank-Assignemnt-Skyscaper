@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candeur Crescent | Mohit Srivastava</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!--==================== FLOATING CONTACTS ====================-->
+    <div class="floating-contact">
+        <a href="tel:+919876543210" class="float-btn phone-btn" title="Call Us">
+            <svg viewBox="0 0 24 24" width="24" height="24">
+                <path d="M6.62 10.79a15.15 15.15 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.11-.27 11.36 11.36 0 0 0 3.58 1.1 1 1 0 0 1 .88 1v3.21a1 1 0 0 1-1 1A16 16 0 0 1 3 4a1 1 0 0 1 1-1h3.21a1 1 0 0 1 1 .88 11.36 11.36 0 0 0 1.1 3.58 1 1 0 0 1-.27 1.11z" fill="currentColor"/>
+            </svg>
+        </a>
+        <a href="https://wa.me/919876543210" class="float-btn whatsapp-btn" target="_blank" title="WhatsApp Us">
+            <svg viewBox="0 0 448 512" width="28" height="28">
+                <path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+            </svg>
+        </a>
+    </div>
+
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <!-- Logo Left -->
+            <a href="#" class="logo">
+                <img src="assets/logo/logo.png" alt="Candeur Crescent">
+            </a>
+
+            <!-- Navigation Capsule -->
+            <nav class="navbar" id="navbar">
+                <ul class="nav-links">
+                    <li><a href="#hero" class="active">Home</a></li>
+                    <li><a href="#welcome">About</a></li>
+                    <li><a href="#plans">Floor Plans</a></li>
+                    <li><a href="#amenities">Amenities</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Logo Right -->
+            <div class="logo-right">
+                <img src="assets/logo/logo2.png" alt="Candeur Developers">
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!--==================== HERO ====================-->
+    <section class="hero" id="hero">
+        <img src="assets/hero/background.png" class="hero-bg" alt="Candeur Crescent Skyscraper">
+        <div class="overlay"></div>
+
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h4 class="hero-subtitle">ONE OF SOUTH - INDIA'S HIGHEST</h4>
+                <h1 class="hero-title">Skyscraper</h1>
+            </div>
+        </div>
+
+        <!-- Curved Stats Banner -->
+        <div class="stats-banner-wrapper">
+            <div class="container">
+                <div class="stats-banner">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-circle-wrap">
+                                <div class="stat-circle">
+                                    <span class="counter" data-target="5.5">0</span>
+                                </div>
+                            </div>
+                            <div class="stat-text">
+                                <span class="stat-title">ACRES OF</span>
+                                <span class="stat-desc">PROJECT AREA</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-circle-wrap">
+                                <div class="stat-circle">
+                                    <span class="counter" data-target="5">0</span>
+                                </div>
+                            </div>
+                            <div class="stat-text">
+                                <span class="stat-title">TOWERS</span>
+                                <span class="stat-desc">WITH PARKING</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-circle-wrap">
+                                <div class="stat-circle">
+                                    <span class="counter" data-target="5">0</span>
+                                </div>
+                            </div>
+                            <div class="stat-text">
+                                <span class="stat-title">UNIT/</span>
+                                <span class="stat-desc">FLOOR</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-circle-wrap">
+                                <div class="stat-circle">
+                                    <span class="counter" data-target="62000">0</span>
+                                </div>
+                            </div>
+                            <div class="stat-text">
+                                <span class="stat-title">SQUARE FEET</span>
+                                <span class="stat-desc">LAVISH CLUBHOUSE</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-circle-wrap">
+                                <div class="stat-circle">
+                                    <span class="counter" data-target="10.1">0</span><span class="counter-unit">'</span>
+                                </div>
+                            </div>
+                            <div class="stat-text">
+                                <span class="stat-title">CEILING HEIGHT</span>
+                                <span class="stat-desc">PER EACH FLAT</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stats-divider"></div>
+                    <div class="stats-contact">
+                        <a href="tel:+919876543210" class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <span class="contact-val">+91 98765 43210</span>
+                        </a>
+                        <a href="mailto:info@example.com" class="contact-item">
+                            <span class="contact-icon">✉</span>
+                            <span class="contact-val">Crescent@gmail.com</span>
+                        </a>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span class="contact-val">Bengaluru, Karnataka</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== WELCOME ====================-->
+    <section class="welcome section" id="welcome" style="background-image: url('assets/bgg.jpg');">
+        <div class="container">
+            <div class="welcome-container">
+                <!-- Left Content -->
+                <div class="welcome-left">
+                    <span class="sub-title">WELCOME TO CRESCENT</span>
+                    
+                    <div class="welcome-split">
+                        <div class="welcome-title-wrap">
+                            <h2 class="outlined-title">
+                                LEAP INTO<br>
+                                THE SKY<br>
+                                WITH<br>
+                                CRESCENT
+                            </h2>
+                        </div>
+                        <div class="welcome-descr-wrap">
+                            <p class="welcome-text">
+                                Situated in the heart of Gachibowli-Lingampally, Candeur Crescent stands as a testament to modern luxury. Designed for those who seek the extraordinary, Crescent offers premium apartments with unmatched views and world-class amenities.
+                            </p>
+                            <div class="rera-badge">
+                                <strong>RERA No. :</strong> P02900004975
+                            </div>
+                            <a href="appointment.html" class="btn enquire-outline-btn">ENQUIRE NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Circular Image -->
+                <div class="welcome-right">
+                    <div class="circle-image-container">
+                        <div class="circle-image-bg"></div>
+                        <img src="assets/bk.png" alt="Candeur Crescent Tower Rendering">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== FLOOR PLANS ====================-->
+    <section class="plans section" id="plans" style="background-image: url('assets/background.jpg');">
+        <div class="container">
+            <div class="section-badge-header">
+                <div class="badge-icon-wrap">
+                    <img src="assets/hed.png" alt="plans-badge" class="section-badge-icon">
+                </div>
+                <div class="badge-title-wrap">
+                    <span class="badge-subtitle">CANDEUR CRESCENT</span>
+                    <h2 class="badge-title">PLANS</h2>
+                </div>
+                <div class="badge-actions">
+                    <button class="plan-toggle-btn active" data-type="master">Master Plan</button>
+                    <button class="plan-toggle-btn" data-type="floor">Floor Plans</button>
+                </div>
+            </div>
+
+            <!-- Floor Plan Cards Grid -->
+            <div class="plans-grid">
+                <div class="plan-card">
+                    <div class="plan-card-inner">
+                        <div class="plan-badge">TOWER A</div>
+                        <div class="plan-img-container">
+                            <img src="assets/tower/a.jpg" alt="Tower A Layout" class="zoomable-plan">
+                        </div>
+                    </div>
+                </div>
+                <div class="plan-card">
+                    <div class="plan-card-inner">
+                        <div class="plan-badge">TOWER B</div>
+                        <div class="sold-ribbon">Sold Out</div>
+                        <div class="plan-img-container">
+                            <img src="assets/tower/a.jpg" alt="Tower B Layout" class="zoomable-plan">
+                        </div>
+                    </div>
+                </div>
+                <div class="plan-card">
+                    <div class="plan-card-inner">
+                        <div class="plan-badge">TOWER C</div>
+                        <div class="plan-img-container">
+                            <img src="assets/tower/a.jpg" alt="Tower C Layout" class="zoomable-plan">
+                        </div>
+                    </div>
+                </div>
+                <div class="plan-card">
+                    <div class="plan-card-inner">
+                        <div class="plan-badge">TOWER D</div>
+                        <div class="sold-ribbon">Sold Out</div>
+                        <div class="plan-img-container">
+                            <img src="assets/tower/a.jpg" alt="Tower D Layout" class="zoomable-plan">
+                        </div>
+                    </div>
+                </div>
+                <div class="plan-card">
+                    <div class="plan-card-inner">
+                        <div class="plan-badge">TOWER E</div>
+                        <div class="plan-img-container">
+                            <img src="assets/tower/a.jpg" alt="Tower E Layout" class="zoomable-plan">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="plans-footer-action">
+                <a href="#" class="btn download-layout-btn">
+                    <span>Download Brochure</span>
+                    <span class="btn-icon">⬇</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== AMENITIES ====================-->
+    <section class="amenities section" id="amenities">
+        <div class="amenities-bg-overlay" style="background-image: url('assets/right_glb.png');"></div>
+        <div class="overlay"></div>
+
+        <div class="container amenities-container">
+            <!-- Left Info Panel -->
+            <div class="amenities-info-panel">
+                <div class="amenities-badge-title">
+                    <div class="crescent-badge"></div>
+                    <h2>AMENITIES</h2>
+                </div>
+                <h3 class="amenities-heading">An Amalgamation<br>of <strong>Luxurious</strong><br>Amenities & Natural<br>Elements</h3>
+                <a href="appointment.html" class="btn enquire-outline-btn light">Enquire Now</a>
+            </div>
+
+            <!-- Right Amenities Cards Grid -->
+            <div class="amenities-grid-wrapper">
+    
+                <div class="amenities-grid" id="amenities-grid">
+                    <div class="amenities-slide">
+                        <div class="amenity-item">
+                            <div class="amenity-circle">
+                                <img src="assets/icon/1.png" alt="Cycling Track">
+                            </div>
+                            <span class="amenity-name">Cycling Track</span>
+                        </div>
+                        <div class="amenity-item">
+                            <div class="amenity-circle">
+                                <img src="assets/icon/2.png" alt="Beauty Salon & Spa">
+                            </div>
+                            <span class="amenity-name">Beauty Salon & Spa</span>
+                        </div>
+                        <div class="amenity-item">
+                            <div class="amenity-circle">
+                                <img src="assets/icon/3.png" alt="Amphitheatre">
+                            </div>
+                            <span class="amenity-name">Amphitheatre</span>
+                        </div>
+                        <div class="amenity-item">
+                            <div class="amenity-circle">
+                                <img src="assets/icon/4.png" alt="Digital Kiosk & ATM">
+                            </div>
+                            <span class="amenity-name">Digital Kiosk & ATM</span>
+                        </div>
+                        <div class="amenity-item">
+                            <div class="amenity-circle">
+                                <img src="assets/icon/5.png" alt="Billiards & Snooker">
+                            </div>
+                            <span class="amenity-name">Billiards & Snooker</span>
+                        </div>
+                        <div class="amenity-item">
+                            <div class="amenity-circle">
+                                <img src="assets/icon/6-new.png" alt="Cards & Board Games">
+                            </div>
+                            <span class="amenity-name">Cards & Board Games</span>
+                        </div>
+                        <div class="amenity-item">
+                            <div class="amenity-circle">
+                                <img src="assets/icon/7.png" alt="Swimming Pool">
+                            </div>
+                            <span class="amenity-name">Swimming Pool</span>
+                        </div>
+                        <div class="amenity-item">
+                            <div class="amenity-circle">
+                                <img src="assets/icon/8.png" alt="Fine Dining Restaurant">
+                            </div>
+                            <span class="amenity-name">Fine Dining Restaurant</span>
+                        </div>
+                        <div class="amenity-item">
+                            <div class="amenity-circle">
+                                <img src="assets/icon/9.png" alt="Covered Car Parking">
+                            </div>
+                            <span class="amenity-name">Covered Car Parking</span>
+                        </div>
+                        <div class="amenity-item">
+                            <div class="amenity-circle">
+                                <img src="assets/icon/10.png" alt="Clinic & Pharmacy">
+                            </div>
+                            <span class="amenity-name">Clinic & Pharmacy</span>
+                        </div>
+                        <div class="amenity-item">
+                            <div class="amenity-circle">
+                                <img src="assets/icon/12.png" alt="Conference Room">
+                            </div>
+                            <span class="amenity-name">Conference Room</span>
+                        </div>
+                        <div class="amenity-item">
+                            <div class="amenity-circle">
+                                <img src="assets/icon/13.png" alt="Cricket Practice Pitch">
+                            </div>
+                            <span class="amenity-name">Cricket Practice Pitch</span>
+                        </div>
+                        <div class="amenity-item">
+                            <div class="amenity-circle">
+                                <img src="assets/icon/14.png" alt="Yoga Deck">
+                            </div>
+                            <span class="amenity-name">Yoga Deck</span>
+                        </div>
+                        <div class="amenity-item">
+                            <div class="amenity-circle">
+                                <img src="assets/icon/15.png" alt="Outdoor Seating Lounge">
+                            </div>
+                            <span class="amenity-name">Outdoor Seating Lounge</span>
+                        </div>
+                        <div class="amenity-item">
+                            <div class="amenity-circle">
+                                <img src="assets/icon/16.png" alt="Barbecue Corner">
+                            </div>
+                            <span class="amenity-name">Barbecue Corner</span>
+                        </div>
+                        <div class="amenity-item">
+                            <div class="amenity-circle">
+                                <img src="assets/icon/17.png" alt="Gated Emergency Exit">
+                            </div>
+                            <span class="amenity-name">Gated Emergency Exit</span>
+                        </div>
+                        <div class="amenity-item">
+                            <div class="amenity-circle">
+                                <img src="assets/icon/18.png" alt="Housekeeping & Maintenance">
+                            </div>
+                            <span class="amenity-name">Housekeeping & Maintenance</span>
+                        </div>
+                        <div class="amenity-item">
+                            <div class="amenity-circle">
+                                <img src="assets/icon/19.png" alt="Flower & Butterfly Garden">
+                            </div>
+                            <span class="amenity-name">Flower & Butterfly Garden</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Controls -->
+                <div class="amenities-nav">
+                    <button class="nav-arrow prev-arrow" id="amenity-prev">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                    <button class="nav-arrow next-arrow" id="amenity-next">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== GALLERY ====================-->
+    <section class="gallery section" id="gallery">
+        <div class="container">
+            <div class="section-badge-header centered">
+                <div class="badge-icon-wrap">
+                    <img src="assets/hed.png" alt="gallery-badge" class="section-badge-icon">
+                </div>
+                <div class="badge-title-wrap">
+                    <span class="badge-subtitle">PROJECT</span>
+                    <h2 class="badge-title">GALLERYS</h2>
+                </div>
+            </div>
+
+            <!-- Tab Panels Container -->
+            <div class="gallery-wrapper-panel">
+                <div class="gallery-tabs">
+                    <button class="gallery-tab-btn active" data-tab="video">
+                        <span class="tab-icon">▶</span> VIDEO GALLERY
+                    </button>
+                    <button class="gallery-tab-btn" data-tab="image">
+                        <span class="tab-icon">📷</span> IMAGE GALLERY
+                    </button>
+                </div>
+
+                <div class="gallery-content active" id="gallery-video">
+                    <div class="video-grid">
+                        <div class="video-card" data-video-url="https://www.youtube.com/embed/RNyzf2DEH-A?si=qJHGG66yv-pqEazu">
+                            <div class="video-thumbnail-wrap">
+                                <img src="assets/1.jpg" alt="Interior Kitchen View">
+                                <div class="play-btn-overlay">
+                                    <div class="play-btn"></div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <h3>Candeur Crescent Project Walkthrough</h3>
+                                <p>Detailed walkthrough of the premium interior layout and modern finishes.</p>
+                            </div>
+                        </div>
+                        <div class="video-card" data-video-url="https://www.youtube.com/embed/qWvwauCVHxU?si=xlUZCTyh4d_eOTdO">
+                            <div class="video-thumbnail-wrap">
+                                <img src="assets/2.jpg" alt="Exterior Aerial View">
+                                <div class="play-btn-overlay">
+                                    <div class="play-btn"></div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <h3>Candeur Crescent Render Video</h3>
+                                <p>Drone rendering perspective of the high-rise tower structure and landscape.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-content" id="gallery-image">
+                    <div class="image-grid-masonry">
+                        <div class="masonry-item"><img src="assets/1.jpg" alt="Project Image 1"></div>
+                        <div class="masonry-item"><img src="assets/2.jpg" alt="Project Image 2"></div>
+                        <div class="masonry-item"><img src="assets/amt.png" alt="Project Image 3"></div>
+                        <div class="masonry-item"><img src="assets/right_glb.png" alt="Project Image 4"></div>
+                        <div class="masonry-item"><img src="assets/bk.png" alt="Project Image 5"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-footer-action">
+                <a href="#" class="btn download-layout-btn">
+                    <span>Download Brochure</span>
+                    <span class="btn-icon">⬇</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== LOCATION ====================-->
+    <section class="location section" id="location" >
+        <div class="container">
+            <div class="section-badge-header">
+                <div class="badge-icon-wrap">
+                    <img src="assets/hed.png" alt="location-badge" class="section-badge-icon">
+                </div>
+                <div class="badge-title-wrap">
+                    <span class="badge-subtitle">LOCATION</span>
+                    <h2 class="badge-title">NEIGHBOURHOOD</h2>
+                </div>
+            </div>
+
+            <div class="location-container">
+                <!-- Left Details Grid -->
+                <div class="location-details-grid">
+                    <!-- Column 1: IT/Corporates -->
+                    <div class="location-col">
+                        <div class="loc-header">
+                            <img src="assets/icon/12.png" class="loc-cat-icon" alt="IT Icon">
+                            <h3>IT / Corporates</h3>
+                        </div>
+                        <ul class="loc-list">
+                            <li><span>Microsoft</span> <strong>- 10 Mins</strong></li>
+                            <li><span>Wipro</span> <strong>- 12 Mins</strong></li>
+                            <li><span>Google</span> <strong>- 12 Mins</strong></li>
+                            <li><span>Infosys</span> <strong>- 15 Mins</strong></li>
+                            <li><span>Cognizant</span> <strong>- 15 Mins</strong></li>
+                            <li><span>TCS</span> <strong>- 15 Mins</strong></li>
+                            <li><span>Capgemini</span> <strong>- 18 Mins</strong></li>
+                            <li><span>Amazon</span> <strong>- 18 Mins</strong></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 2: Education -->
+                    <div class="location-col">
+                        <div class="loc-header">
+                            <img src="assets/icon/38.png" class="loc-cat-icon" alt="Education Icon">
+                            <h3>Education</h3>
+                        </div>
+                        <ul class="loc-list">
+                            <li><span>Sancta Maria Intl School</span> <strong>- 1 Min</strong></li>
+                            <li><span>Delhi Public School</span> <strong>- 10 Mins</strong></li>
+                            <li><span>Chirec Intl School</span> <strong>- 12 Mins</strong></li>
+                            <li><span>Oakridge Intl School</span> <strong>- 15 Mins</strong></li>
+                            <li><span>University of Hyderabad</span> <strong>- 15 Mins</strong></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3: Hospitals -->
+                    <div class="location-col">
+                        <div class="loc-header">
+                            <img src="assets/icon/10.png" class="loc-cat-icon" alt="Hospital Icon">
+                            <h3>Hospitals</h3>
+                        </div>
+                        <ul class="loc-list">
+                            <li><span>Citizens Hospital</span> <strong>- 5 Mins</strong></li>
+                            <li><span>AIG Hospital</span> <strong>- 10 Mins</strong></li>
+                            <li><span>Continental Hospital</span> <strong>- 12 Mins</strong></li>
+                            <li><span>Care Hospital</span> <strong>- 15 Mins</strong></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4: Entertainment -->
+                    <div class="location-col">
+                        <div class="loc-header">
+                            <img src="assets/icon/27.png" class="loc-cat-icon" alt="Entertainment Icon">
+                            <h3>Entertainment</h3>
+                        </div>
+                        <ul class="loc-list">
+                            <li><span>Sarath City Mall</span> <strong>- 12 Mins</strong></li>
+                            <li><span>Forum Sujana Mall</span> <strong>- 15 Mins</strong></li>
+                            <li><span>Inorbit Mall</span> <strong>- 18 Mins</strong></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 5: Connectivity -->
+                    <div class="location-col">
+                        <div class="loc-header">
+                            <img src="assets/icon/32.png" class="loc-cat-icon" alt="Connectivity Icon">
+                            <h3>Connectivity</h3>
+                        </div>
+                        <ul class="loc-list">
+                            <li><span>Lingampally Railway Stn</span> <strong>- 2 Mins</strong></li>
+                            <li><span>Outer Ring Road (ORR)</span> <strong>- 5 Mins</strong></li>
+                            <li><span>Raidurg Metro Stn</span> <strong>- 10 Mins</strong></li>
+                            <li><span>RGIA Airport</span> <strong>- 35 Mins</strong></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Map/Global Image -->
+                <div class="location-image-side">
+                    <div class="loc-graphics-wrap">
+                        <div class="loc-ripple-circle"></div>
+                        <div class="loc-ripple-circle wave2"></div>
+                        <img src="assets/amt.png" alt="Location Coordinates">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Booking Callout Bar -->
+            <div class="booking-callout-banner">
+                <span class="callout-text">Wanna Visit Our Site? Book an Appointment:</span>
+                <a href="appointment.html" class="btn book-appointment-btn">Book Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer" id="contact" style="background-image: url('assets/footer-bg.jpg');">
+        <div class="footer-overlay"></div>
+        <div class="container footer-content-wrap">
+            <div class="footer-wrapper">
+                <!-- Company -->
+                <div class="footer-col brand-col">
+                    <img src="assets/logo/logo.png" class="footer-logo" alt="Candeur Crescent">
+                    <p>
+                        Experience the height of living at Crescent, where architecture, nature, and modern lifestyle come together. Spacious apartments, premium amenities, landscaped gardens, and world-class infrastructure create a perfect destination.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-col links-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#welcome">About</a></li>
+                        <li><a href="#plans">Floor Plans</a></li>
+                        <li><a href="#amenities">Amenities</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#location">Location</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-col contact-col">
+                    <h3>Contact Us</h3>
+                    <p class="contact-line">📍 Bengaluru, Karnataka, India</p>
+                    <p class="contact-line">📞 +91 98765 43210</p>
+                    <p class="contact-line">✉ Crescent@gmail.com</p>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="copyright">
+                © 2026 Candeur Crescent. All Rights Reserved. Designed to perfection.
+            </div>
+        </div>
+    </footer>
+
+    <div class="lightbox" id="video-lightbox">
+        <span class="lightbox-close" id="close-video">&times;</span>
+        <div class="lightbox-content video-container">
+            <iframe id="lightbox-iframe" width="100%" height="100%" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="lightbox" id="image-lightbox">
+        <span class="lightbox-close" id="close-image">&times;</span>
+        <img id="lightbox-img" src="" alt="Enlarged Image" class="lightbox-content">
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
